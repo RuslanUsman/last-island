@@ -1,0 +1,256 @@
+/* Подключение рукописного шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+/* Основные стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive; /* Используем рукописный шрифт Caveat */
+  background: linear-gradient(to bottom, #2c3e50, #1f2937); /* Градиент как фон */
+  color: #ecf0f1; /* Светло-серый текст */
+  line-height: 1.8; /* Более плавный интервал между строками */
+}
+
+header img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для изображения */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out; /* Эффект появления */
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: linear-gradient(to right, #34495e, #2c3e50); /* Градиент для карточек */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Эффект наведения */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Увеличение карточки */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 28px; /* Увеличен размер текста заголовка */
+  text-align: center;
+  font-family: 'Dancing Script', cursive; /* Рукописный шрифт для заголовков */
+  font-weight: bold; /* Жирный заголовок */
+  color: #f1c40f; /* Золотистый текст */
+}
+
+.card p {
+  font-size: 22px; /* Увеличен размер текста описания */
+  text-align: center;
+  font-family: 'Pacifico', cursive; /* Приятный рукописный шрифт для описаний */
+  font-weight: bold; /* Жирный текст описания */
+}
+
+/* Контейнер для кнопок */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Расположить кнопки по краям */
+  margin-top: 15px; /* Отступ сверху кнопок */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого */
+    padding: 20px;
+    background: linear-gradient(to right, #34495e, #2c3e50);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card a {
+    display: block; /* Каждая кнопка занимает свою строку */
+    margin: 15px; /* Отступы вокруг кнопки */
+    padding: 15px 25px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #34495e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .card a:hover {
+    background: #1f2937;
+    color: #f1c40f;
+    transform: scale(1.1); /* Легкое увеличение кнопки */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #34495e;
+  }
+  
+  footer .footer-button {
+    display: inline-flex; /* Центрирование содержимого кнопки */
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px; /* Размер кнопки */
+    background: #2c3e50; /* Темный фон кнопки */
+    color: #ecf0f1; /* Светлый текст */
+    text-decoration: none; /* Убирает подчеркивание */
+    border-radius: 8px; /* Скругленные углы */
+    border: 2px solid #34495e; /* Текстурированная граница */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Глубокая тень */
+    font-family: 'Pacifico', cursive; /* Элегантный шрифт */
+    font-size: 20px; /* Увеличенный текст */
+    font-weight: bold; /* Жирный текст */
+    transition: all 0.3s ease; /* Плавные переходы */
+  }
+  
+  footer .footer-button:hover {
+    background: #1f2937; /* Фон при наведении */
+    color: #f1c40f; /* Золотистый текст */
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7); /* Более глубокая тень */
+  }
+  
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px; /* Увеличен размер кнопки Telegram */
+  background: #3498db; /* Синий для Telegram кнопки */
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Dancing Script', cursive; /* Шрифт для кнопки Telegram */
+  font-size: 20px; /* Увеличен размер текста кнопки Telegram */
+  font-weight: bold; /* Жирный текст кнопки Telegram */
+}
+
+footer a:hover {
+  background: #2980b9;
+  transform: scale(1.1); /* Лёгкое увеличение */
+}
+
+footer p {
+  margin-top: 10px;
+  color: #bdc3c7; /* Светло-серый текст */
+  font-family: 'Pacifico', cursive; /* Эффект рукописного текста для подвала */
+  font-size: 22px; /* Увеличен размер текста подвала */
+  font-weight: bold; /* Жирный текст подвала */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Размещает кнопки по краям */
+    align-items: center; /* Выравнивание кнопок по вертикали */
+    margin-top: 20px; /* Отступ сверху кнопок */
+  }
+  
+  .button-container a, .button-container .back-button {
+    display: inline-flex; /* Для выравнивания текста внутри кнопки */
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px; /* Размер кнопки */
+    background: #2c3e50; /* Цвет фона кнопки */
+    color: #ecf0f1; /* Цвет текста */
+    text-decoration: none;
+    border-radius: 8px; /* Скругленные углы */
+    border: 2px solid #34495e; /* Граница */
+    font-family: 'Caveat', cursive; /* Шрифт */
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Тень */
+    transition: all 0.3s ease; /* Плавный переход */
+  }
+  
+  .button-container a:hover, .button-container .back-button:hover {
+    background: #1f2937; /* Цвет при наведении */
+    color: #f1c40f; /* Цвет текста при наведении */
+    transform: scale(1.1); /* Лёгкое увеличение кнопки */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7); /* Глубокая тень */
+  }
+  
+  .button-container a:active, .button-container .back-button:active {
+    transform: scale(0.95); /* Уменьшение при клике */
+    background: #34495e; /* Цвет при нажатии */
+  }
+  
+
+
+
+
+
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #34495e;
+  }
+  
+  /* Кнопка в футере */
+  footer .footer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    background: #2c3e50; /* Темный фон */
+    color: #ecf0f1; /* Светлый текст */
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #34495e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Тень */
+    font-family: 'Pacifico', cursive; /* Рукописный шрифт */
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  footer .footer-button:hover {
+    background: #1f2937; /* Фон при наведении */
+    color: #f1c40f; /* Золотой текст */
+    transform: scale(1.1); /* Эффект увеличения */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7); /* Глубокая тень */
+  }
+  

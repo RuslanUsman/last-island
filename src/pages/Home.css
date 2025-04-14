@@ -1,0 +1,52 @@
+/* Основной контейнер */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1f2937, #34495e); /* Градиент для фона */
+    color: #ecf0f1; /* Светлый цвет текста */
+  }
+  
+  /* Заголовок главной страницы */
+  .home-title {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive; /* Рукописный шрифт */
+    color: #f1c40f; /* Золотистый цвет */
+    margin-bottom: 20px;
+  }
+  
+  /* Описание главной страницы */
+  .home-description {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Caveat', cursive; /* Приятный рукописный шрифт */
+    margin-bottom: 30px;
+    color: #bdc3c7; /* Светло-серый текст */
+  }
+  
+  /* Кнопки главной страницы */
+  .home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Тень */
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .home-button:hover {
+    background: #34495e;
+    color: #f1c40f;
+    transform: scale(1.1); /* Эффект увеличения */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+  }
+  
