@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/last-island/static/css/main.d8ed4727.css",
-    "main.js": "/last-island/static/js/main.e94ec749.js",
+    "main.js": "/last-island/static/js/main.4c641e87.js",
     "index.html": "/last-island/index.html",
     "main.d8ed4727.css.map": "/last-island/static/css/main.d8ed4727.css.map",
-    "main.e94ec749.js.map": "/last-island/static/js/main.e94ec749.js.map"
+    "main.4c641e87.js.map": "/last-island/static/js/main.4c641e87.js.map"
   },
   "entrypoints": [
     "static/css/main.d8ed4727.css",
-    "static/js/main.e94ec749.js"
+    "static/js/main.4c641e87.js"
   ]
 }
